@@ -5,42 +5,42 @@
 /* JOUW @FONT-FACE CODE HIER */
 @font-face {
   /* regular / 400 */
-
+  font-family: "Expletus Sans";
+  src: url("../fonts/ExpletusSans-Regular.ttf");
+  font-weight: 400;
 }
 
 @font-face {
   /* bold / 700 */
-
+  font-family: "Expletus Sans";
+  src: url("../fonts/ExpletusSans-Bold.ttf");
+  font-weight: 700;
 }
 
-
 li:first-of-type {
-  padding:1em;
-  overflow:auto;
+  padding: 1em;
+  overflow: auto;
 }
 
 li:first-of-type h2 {
   /* JOUW CODE HIER */
-  
-
+  font-family: "Expletus Sans", sans-serif;
+  font-size: 1.75rem;
 }
 
 li:first-of-type p {
   /* JOUW CODE HIER */
-  
-
+  font-family: "Expletus Sans", sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.4rem;
 }
 
 /* hiermee selecteer je de eerste letter van de p in het eerste blokje */
 li:first-of-type p::first-letter {
   /* JOUW CODE HIER */
-
-  
+  font-size: 1.75rem;
+  font-weight: bold;
 }
-
-
-
-
 
 /*******************************/
 /* CODE VOOR HET TWEEDE BLOKJE */
@@ -48,39 +48,41 @@ li:first-of-type p::first-letter {
 
 /* JOUW @FONT-FACE CODE HIER */
 @font-face {
-  
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Thin.ttf");
+  font-weight: 100;
 }
-
 
 /* hiermee selecteer je het tweede blokje */
 li:nth-of-type(2) {
   /* custom properties voor tweede blokje */
-  --color:hsl(0 0% 100%);
-  --background:rgb(0 24 54);
-  --shadow:Cyan;
-  
+  --color: hsl(0 0% 100%);
+  --background: rgb(0 24 54);
+  --shadow: Cyan;
+
   /* met onderstaande regels staat de tekst in het midden */
   /* en elk woord op een nieuwe regel */
-  display:grid;
-  grid-auto-columns:min-content;  
-  place-content:center;
-  text-align:center;
-  
-  background-color:var(--background);
+  display: grid;
+  grid-auto-columns: min-content;
+  place-content: center;
+  text-align: center;
+
+  background-color: var(--background);
 }
 
 li:nth-of-type(2) h2 {
-  margin:0;
-  color:var(--color);
+  margin: 0;
+  color: var(--color);
 
   /* JOUW CODE HIER */
-
-  
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--color);
+  text-shadow: 0 0 0.25em var(--shadow);
+  font-weight: 100;
 }
-
-
-
-
 
 /******************************/
 /* CODE VOOR HET DERDE BLOKJE */
@@ -88,22 +90,33 @@ li:nth-of-type(2) h2 {
 
 /* JOUW @FONT-FACE CODE HIER */
 @font-face {
-  
+  font-family: "Saira Condensed";
+  src: url("../fonts/Saira_Condensed-Bold.ttf");
+  font-weight: 700;
 }
 
 li:nth-of-type(3) {
   /* custom properties voor derde blokje */
-  --color:white;
-  --background:rgb(230 127 138);
-  --shadow:rgb(0 0 0 / .75);
+  --color: white;
+  --background: rgb(230 127 138);
+  --shadow: rgb(0 0 0 / 0.75);
 
   /* JOUW CODE HIER */
-  
-
+  display: grid;
+  grid-template-columns: min-content;
+  place-content: center;
+  text-align: center;
+  background-color: var(--background);
 }
 
 li:nth-of-type(3) h2 {
   /* JOUW CODE HIER */
-
-  
+  font-family: "Saira Condensed";
+  font-size: 3rem;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--color);
+  text-shadow: 4px 4px 0px var(--shadow);
+  letter-spacing: 0.2rem;
+  transform: skewY(-10deg);
 }
